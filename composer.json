@@ -1,0 +1,23 @@
+{
+    "name": "mvrhov/view-bundle",
+    "type": "symfony-bundle",
+    "description": "mvrhov view bundle",
+    "keywords": ["View bundle"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "mvrhov\\ViewBundle\\": ""
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "symfony/framework-bundle": "^3.4|^4.0",
+        "twig/twig": "^1.34|^2.4"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.5-dev"
+        }
+    }
+}
