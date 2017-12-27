@@ -7,8 +7,7 @@
     <services>
         <defaults public="false"/>
 
-        <service id="app_bundle.listener.view" class="mvrhov\ViewBundle\EventListener\ViewListener"
-                 public="true">
+        <service id="mvrhov_bundle.view_listener" class="mvrhov\ViewBundle\EventListener\ViewListener">
             <argument type="service" id="twig"/>
             <argument type="service" id="router"/>
             <tag name="kernel.event_subscriber" />
