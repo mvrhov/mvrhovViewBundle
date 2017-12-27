@@ -25,7 +25,6 @@
 
 namespace mvrhov\ViewBundle\View;
 
-use mageekguy\atoum\asserters\boolean;
 use Symfony\Component\HttpFoundation\Response;
 
 class RouteView extends AbstractView
@@ -34,13 +33,13 @@ class RouteView extends AbstractView
     private $route;
     /** @var array */
     private $parameters;
-    /** @var boolean */
+    /** @var bool */
     private $absolute;
 
     public function __construct(
         string $route,
         array $parameters = [],
-        boolean $absolute = true,
+        bool $absolute = true,
         int $statusCode = Response::HTTP_FOUND,
         array $headers = []
     ) {
